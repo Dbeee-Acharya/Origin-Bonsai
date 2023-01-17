@@ -1,29 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta name="author" content="origin bonsai">
+  <head>
+    <meta name="author" content="origin bonsai" />
     <title>Cart</title>
 
-    <link rel="stylesheet" href="../CSS/cartPage-style.css">
-    <link rel="stylesheet" href="../css/header-style.css">
+    <link rel="stylesheet" href="../CSS/cartPage-style.css" />
+    <link rel="icon" href="../../../22067800-SakchyamThapa/logo/png/logo-no-background.png" />
+    <link rel="stylesheet" href="../css/header-style.css" />
+    <script src="../JavaScript/CartPage.js"></script>
 
     <style>
-        * {
-            box-sizing: border-box;
-        }
+      * {
+        box-sizing: border-box;
+      }
 
-        body {
-            margin: 0;
-            background-color: #f5f5f5;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
+      body {
+        margin: 0;
+        background-color: #f5f5f5;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
     </style>
-</head>
-<body>
-    
+  </head>
+  <body>
+    <div class="menu">
+      <div class="button">
+        <p><a class="link" href="../../../22067800-SakchyamThapa/Code/potfolio.html">About us</p></a>
+        <p>References</p>
+        <p>wallet points</p>
+        <p><a  class="link" href="./feedbackPage.html"> feed-back</p></a>
+      </div>
+    </div>
     <!--The header tag wraps the topmost part i.e. the header of the page-->
     <header>
         <div class="header-content left">
@@ -52,34 +61,37 @@
     </header>
 
     <section>
-        <div class="product-main">
-            <table>
+      <div class="product-main">
+        <table>
+          <tr>
+            <td>
+              <img
+                src="../../images/ff.jpg"
+                alt="Products"
+                class="product-image"
+              />
+            </td>
+            <td>
+              <table style="width: 650px; height: 90%; padding: 25px">
                 <tr>
-                    <td> 
-                        <img src="../../images/ff.jpg" alt="Products" class="product-image">
-                    </td>
-                    <td>
-                        <table style="width: 650px; height: 90%; padding: 25px;">
-                            <tr>
-                                <td>information about the product in a simple way</td>
-                            </tr>
-                            <tr>
-                                <td>info info info</td>
-                            </tr>
-                        </table>
-                    </td>
+                  <td>information about the product in a simple way</td>
                 </tr>
-            </table>
-        </div>
+                <tr>
+                  <td>info info info</td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </div>
 
-        <div class="buy-now-main">
-            <table>
-                <tr>
-                    <th><button type="button">buy now</button></th>
-                </tr>
-            </table>
-        </div>
+      <div class="buy-now-main">
+        <table>
+          <tr>
+            <th><button type="button">buy now</button></th>
+          </tr>
+        </table>
+      </div>
     </section>
-
-</body>
+  </body>
 </html>
