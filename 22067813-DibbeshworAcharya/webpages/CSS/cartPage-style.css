@@ -1,0 +1,29 @@
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1000px;  
+}
+
+.product-main {
+    width: 100%;
+    margin: 20px;
+}
+
+.product-main table {
+    border: 2px solid black;
+    width: 75%;
+    height: 100px;
+    margin: 0;
+}
+
+.product-image {
+    width: 300px;
+}
+
+.buy-now-main table {
+    width: 250px;
+    height: 150px;
+    border: 2px solid black;
+
+}

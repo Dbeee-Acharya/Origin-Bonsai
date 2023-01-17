@@ -1,0 +1,202 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: #e6f0ed;
+  position: relative;
+}
+.back {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  align-items: center;
+  background-color: #e0f2e9;
+} /*below header to botoom*/
+ul {
+  /*gap between list*/
+  display: flex;
+  font-size: 1.3rem;
+  list-style: none;
+  color: white;
+
+  gap: 5rem;
+  align-items: center;
+} /*list*/
+.mainimg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-position: top;
+} /*main image*/
+ul img {
+  height: auto;
+  width: 150px;
+}
+/*green top*/
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+  height: 3rem;
+  background-color: #00674b;
+}
+.whitetop {
+  height: 16px;
+  width: 100%;
+  padding: 20px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.arrangeleft {
+  display: flex;
+  gap: 20px;
+}
+.arrangeleft div {
+  display: flex;
+  align-items: center;
+}
+.arrangeleft div img {
+  height: auto;
+  width: 30px;
+}
+.arrangeright {
+  display: flex;
+  gap: 10px;
+  margin-right: 10px;
+}
+.arrangeright p {
+  border-right: 1px solid black;
+  padding-right: 10px;
+}
+.back div {
+  width: 80%;
+  object-fit: fill;
+  height: 320px;
+} /*end of green top*/
+/*Starting of menu button*/
+.menu {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(#1abc9c, #3498db);
+  z-index: 100;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+.button p {
+  padding: 16px 32px;
+  position: relative;
+  overflow: hidden;
+  background-color: white;
+  border-radius: 20px;
+}
+.button {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.button p:hover {
+  background-image: linear-gradient(#16a085, #27ae60);
+}
+
+.insideicon {
+  width: 30px;
+}
+.icons {
+  display: flex;
+  gap: 10px;
+}
+.menubutton {
+  z-index: 100;
+} /*end of menu button*/
+/*potfolio intrudction*/
+.introduction {
+  display: flex;
+  justify-content: center;
+}
+.introimg {
+  height: 10px;
+  width: 10px;
+  justify-content: space-around;
+}
+.link {
+  text-decoration: none;
+}
+.backpot {
+  display: flex;
+}
+/*Startting of left potfolio */
+.leftpot {
+  flex-basis: 15%;
+  background-color: #118b44;
+  height: 100vh;
+}
+.images-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  gap: 4rem;
+}
+.person {
+  height: 80px;
+  width: 80px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 10px;
+  color: white;
+  border-radius: 50%;
+}
+.person img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 3px solid white;
+}
+/*Starting of porfolio in right*/
+.rightpot {
+  background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mainpot {
+  display: flex;
+  align-items: center;
+  width: 70%;
+  gap: 25px;
+}
+.imgpot {
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+}
+.potleft {
+  display: flex;
+  flex-direction: column;
+
+  gap: 10px;
+}
+.backpot {
+  margin-bottom: 50%;
+} /*end of porfolio*/
+.home {
+  text-decoration: none;
+  color: white;
+}
+.link {
+  text-decoration: none;
+  color: black;
+}
