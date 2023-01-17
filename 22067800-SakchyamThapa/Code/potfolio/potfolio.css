@@ -200,3 +200,6 @@ ul img {
   text-decoration: none;
   color: black;
 }
+.wallet:hover {
+  cursor: pointer;
+}
