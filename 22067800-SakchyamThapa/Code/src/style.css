@@ -173,8 +173,9 @@ ul img {
 
 .flip-box-back {
   border-radius: 10%;
-  background-image: linear-gradient(to right bottom, #7ed56f, #28b485);
-  color: white;
+  /* background-image: linear-gradient(to right bottom, #7ed56f, #28b485); */
+  background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+  color: #00674b;
   transform: rotateY(180deg);
 }
 .mainhover {
