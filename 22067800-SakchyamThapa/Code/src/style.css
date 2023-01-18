@@ -173,8 +173,9 @@ ul img {
 
 .flip-box-back {
   border-radius: 10%;
-  background-image: linear-gradient(to right bottom, #7ed56f, #28b485);
-  color: white;
+  /* background-image: linear-gradient(to right bottom, #7ed56f, #28b485); */
+  background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+  color: #00674b;
   transform: rotateY(180deg);
 }
 .mainhover {
@@ -259,33 +260,54 @@ iframe {
   padding: 16px;
   border-radius: 50%;
 }
-.showproduct {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 35%;
-  margin-top: 55%;
-  color: black;
-  height: 50px;
-  background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-  width: 80px;
-  border-radius: 20%;
-}
+
 .text {
   display: flex;
   margin-top: 30%;
   margin-left: 10%;
   margin-right: 10%;
 }
-.showproduct1 {
+
+/*title for categories of bonsai available*/
+.title {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+  color: #27ae60;
+}
+.wallet:hover {
+  cursor: pointer;
+}
+.Size {
+  color: palevioletred;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.types {
+  color: orangered;
+}
+.pord {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 35%;
-  margin-top: 35%;
   color: black;
   height: 50px;
-  background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
   width: 80px;
-  border-radius: 20%;
+  border-radius: 10%;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.pord1 {
+  margin-left: 35%;
+  margin-top: 34%;
+}
+.pord2 {
+  margin-left: 35%;
+  margin-top: 45%;
+}
+.pord3 {
+  margin-left: 35%;
+  margin-top: 23%;
 }
