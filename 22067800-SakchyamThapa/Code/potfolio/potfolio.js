@@ -24,3 +24,7 @@ button.addEventListener("click", function () {
     isShowing = true;
   }
 });
+const walletBtn = document.querySelector(".wallet");
+walletBtn.addEventListener("click", () => {
+  alert("Wallet points coming soon");
+});
