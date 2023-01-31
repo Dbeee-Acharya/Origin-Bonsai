@@ -7,6 +7,8 @@
 
     <style>
 
+        /*universal selector and body tag */
+
         * {
             box-sizing: border-box;
         }
@@ -52,10 +54,13 @@
         </div>
     </header>
 
+    <!-- feedback form begins here -->
     <section>
         <div class="feedback-form">
             <h2>Feedback</h2>
             <form onsubmit="formValidate();" style="text-align: center;">
+
+                <!-- input tag to take in user inputs -->
                 <input type="text" id="name" name="Name" placeholder="Full Name">
                 <br>
 
@@ -83,6 +88,7 @@
                 
                 </div>
 
+                <!-- rating div wraps the three rating options -->
                 <div class="rating">
                     <h4 style="margin-right: 20px;">Rate Us:</h4>
                     <button type="button" onclick="meh()"><img src="../../icons/rating-meh-filled.svg" alt="rating meh" id="mehRating"></button>
