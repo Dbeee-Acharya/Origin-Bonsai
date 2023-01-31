@@ -311,3 +311,7 @@ iframe {
   margin-left: 35%;
   margin-top: 23%;
 }
+
+a {
+  text-decoration: none;
+}
