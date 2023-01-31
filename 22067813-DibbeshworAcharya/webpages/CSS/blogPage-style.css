@@ -3,3 +3,24 @@ section {
     margin: auto;
     margin-top: 25px;
 }
+
+footer {
+    text-align: center;
+    background-color: #00674b;
+
+}
+
+footer a {
+    position: relative;
+    left: 35%;
+    color: black;
+}
+
+footer span {
+    position: relative;
+    left: 5%;
+}
+
+p {
+    font-size: large;
+}
