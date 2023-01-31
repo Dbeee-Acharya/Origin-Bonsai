@@ -298,6 +298,17 @@ input[type="number"]::-webkit-inner-spin-button {
   margin: 20px 0px;
   flex-wrap: wrap;
 }
+
+.blog-container img:hover,
+.blog-container a:hover {
+  opacity: 0.9;
+}
+
+.blog-container img,
+.blog-container a {
+  transition: 0.1s ease-in;
+}
+
 .blog-box {
   width: 600px;
   border: 1px solid #ececec;
