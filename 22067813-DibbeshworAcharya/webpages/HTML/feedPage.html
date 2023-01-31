@@ -58,10 +58,13 @@
     <!--This section tag is for the main section of the webpage that contains all the main contents-->
     <section class="main-container">
 
+        <!-- button to view previous slide  -->
         <a class="back" onclick="prevSlide()" style="margin-right: 10px;">&#10094</a>
 
+        <!-- main post container -->
         <div class="post-container active" id="post1" >
 
+            <!-- post text along with buttons -->
             <div class="post-content">
                 <h2 style="text-align: center;">A mark of eternity</h2>
                 <p>
@@ -78,6 +81,7 @@
 
             </div>
 
+            <!-- image for post -->
             <div class="post-photo">
                 <img src="../../images/bonsai-1.jpg " alt="bonsia photo" style="width: 100%; height: 100%;">
             </div>
@@ -153,7 +157,7 @@
             </div>
         </div>
 
-
+        <!-- button to show previous post -->
         <a class="next" onclick="nextSlide()" style="margin-left:10px;">&#10095</a>
 
         
@@ -162,7 +166,31 @@
     <footer>
         
     </footer>
-    <script src="../JavaScript/feedPageScript.js"></script>
+
+    <!-- JavaScript to change the slides -->
+    <script>
+
+        var content = document.querySelectorAll(".post-content"); //selects all elements with the class "post-content"
+
+        var x = 0; //x shows the current post number
+        var y = 4; //y shows the total number of posts
+
+        //nextSlide function scrolls to the next post
+        function nextSlide() {
+            document.getElementById("post" + (x+1)).classList.remove("active"); //selects the current post and removes the active class which contains the display block
+            x = (x + y + 1) % y; //this changes the value of x to the next post and reverts it to 1 if x exceeds the value of number of posts 
+
+            document.getElementById("post" + (x+1)).classList.add("active") //selects the post next to the current oone and adds the current class 
+        }
+
+        //prevSlide function scrolls back to the previous slide
+        function prevSlide() {
+            document.getElementById("post" + (x+1)).classList.remove("active"); //selects the current post and removes the active class
+            x = (x + y - 1) % y //changes the value of x to the post previous to the current one and reverts it to 1 if x is less than 0
+
+            document.getElementById("post" + (x+1)).classList.add("active"); //selects the previous post and adds the active class
+        }
+    </script>
         
 </body>
 </html>
