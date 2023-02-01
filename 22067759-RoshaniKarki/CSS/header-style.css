@@ -64,6 +64,7 @@ header img {
 .right img:hover,
 .middle-links:hover {
     transform: scale(1.15,1.15); /*transforma is used to apply either 2d or 3d transformation. Scale as its name scales the element in each direction*/
+    border-bottom: 1.5px solid white;
 }
 
 #menu {
