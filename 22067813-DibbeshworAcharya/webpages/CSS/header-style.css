@@ -12,6 +12,11 @@ header {
     z-index: 90; /*defines the position of the header along the x axis, makes sure that other elements go below the header and dont block it*/
 }
 
+.header-active {
+    border-bottom: 1.5px solid white;
+    height: 25px;
+}
+
 /*Targets all the images inside the header*/
 header img {
     width: 35px; 
