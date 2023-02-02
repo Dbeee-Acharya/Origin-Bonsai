@@ -339,7 +339,8 @@ input[type="number"]::-webkit-inner-spin-button {
   color: rgb(183, 12, 12);
   transition: 0.3s ease-in-out;
 }
-.blog-text a {
+.blog-text a,
+.blog-text h2 {
   color: black;
 }
 .blog-text a:hover {
@@ -425,6 +426,10 @@ input[type="number"]::-webkit-inner-spin-button {
   border: 1px #cbd1cc;
   padding: 20px;
   border-radius: 10px;
+}
+
+#gallery table img {
+  width: 600px;
 }
 
 /**about bonsai**/
