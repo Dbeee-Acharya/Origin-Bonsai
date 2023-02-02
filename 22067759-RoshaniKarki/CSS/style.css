@@ -87,7 +87,7 @@ body {
 
 .pro {
   color: white;
-  background-color: white; !important
+  background-color: white; 
 }
 
 /*buy now button for the products */
@@ -146,7 +146,7 @@ border-radius: 4px;
   height: 40px;
   line-height: 40px;
   border-radius: 50px;
-  background-color: #white;
+  background-color: white;
   font-weight: 500;
   color: #5d9943;
 }
