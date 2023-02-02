@@ -11,7 +11,7 @@
 }
 /*default padding and margin */
 body {
-  background-color: #e6f0ed;
+  background-color: #f6f6f6;
   position: relative;
 }
 .back {
@@ -22,7 +22,7 @@ body {
   text-align: center;
   width: 100%;
   align-items: center;
-  background-color: #e0f2e9;
+  background-color: #f6f6f6;
 } /*below header to botoom*/
 ul {
   /*gap between list*/
@@ -55,13 +55,15 @@ ul img {
   background-color: #00674b;
 }
 .whitetop {
-  height: 16px;
-  width: 100%;
-  padding: 20px 0px;
+  font-size: small ;
+  height: 10px;
+  width: 95%;
+  padding: 10px 10px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+
 .arrangeleft {
   display: flex;
   gap: 20px;
@@ -72,8 +74,9 @@ ul img {
 }
 .arrangeleft div img {
   height: auto;
-  width: 30px;
+  width: 20px;
 }
+
 .arrangeright {
   display: flex;
   gap: 10px;
@@ -222,7 +225,7 @@ ul img {
 
 .mainhover {
   display: flex;
-  background-color: #e0f2e9;
+  background-color: #f6f6f6;
   justify-content: space-around;
 } /*flip box end*/
 /*costumer bar*/
@@ -231,7 +234,7 @@ ul img {
   margin-top: 32px;
   margin-left: 64px;
   margin-right: 64px;
-  background-color: #e0f2e9;
+  background-color: #f6f6f6;
 
   margin-bottom: 64px;
 }
@@ -243,7 +246,7 @@ ul img {
   justify-content: space-between;
 } /*end of bar*/
 body {
-  background-color: #e0f2e9;
+  background-color: #f6f6f6;
 }
 /*footer*/
 footer {
