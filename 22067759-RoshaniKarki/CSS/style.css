@@ -277,6 +277,18 @@ input[type="number"]::-webkit-inner-spin-button {
   border-radius: 4px;
 }
 
+.cross {
+  position: relative;
+  left: 10px;
+  top: 10px;
+  width: 30px;
+  transition: 0.2s ease-in-out;
+}
+
+.cross:hover {
+  transform: scale(1.1);
+}
+
 /* blog starts here */
 #Blog {
   display: flex;
@@ -336,15 +348,15 @@ input[type="number"]::-webkit-inner-spin-button {
   display: flex;
   flex-direction: column;
 }
+
 .blog-text .blog-title {
   color: #00674b;
-  font-size: 50px;
-  font-weight: 500;
+  font-size: 40px;
 }
-.blog-text .blog-title :hover {
-  color: rgb(183, 12, 12);
+.blog-text .blog-title {
   transition: 0.3s ease-in-out;
 }
+
 .blog-text a,
 .blog-text h2 {
   color: black;
