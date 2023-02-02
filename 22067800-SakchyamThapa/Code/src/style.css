@@ -81,6 +81,7 @@ ul img {
   object-fit: fill;
   height: 320px;
 } /*green top end*/
+
 /*menu button*/
 .menu {
   top: 0;
@@ -93,6 +94,7 @@ ul img {
   justify-content: center;
   align-items: center;
 }
+
 .button p {
   padding: 16px 32px;
   position: relative;
@@ -110,8 +112,27 @@ ul img {
 }
 
 .insideicon {
-  width: 30px;
+  width: 35px;
+  transition: 0.2s ease-in-out;
 }
+
+.insideicon:hover,
+.top ul li:hover {
+  transform: scale(1.15);
+}
+
+.top ul li:hover {
+  border-bottom: 1.5px solid white;
+}
+
+.active-page {
+  border-bottom: 1.5px solid white;
+}
+
+.top ul li {
+  transition: 0.2s ease-in-out;
+}
+
 .icons {
   display: flex;
   gap: 10px;
