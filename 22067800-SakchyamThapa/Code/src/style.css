@@ -212,6 +212,7 @@ ul img {
 
 .flip-box-back p {
   margin-top: 20px;
+  color: black;
 }
 
 .flip-box-back a {
@@ -312,7 +313,7 @@ iframe {
 /*title for categories of bonsai available*/
 .title {
   text-align: center;
-  margin-top: 10px;
+  margin-top: 30px;
 }
 .wallet:hover {
   cursor: pointer;
