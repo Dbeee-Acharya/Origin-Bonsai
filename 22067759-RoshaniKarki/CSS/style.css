@@ -56,6 +56,11 @@ body {
   display: flex;
   margin-left: 20px;
 }
+
+.defult {
+  margin-right: 20px;
+}
+
 .select {
   border: 1px solid black;
   padding: 1px;
