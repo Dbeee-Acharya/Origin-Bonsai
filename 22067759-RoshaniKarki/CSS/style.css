@@ -9,6 +9,13 @@ body {
   padding: 0;
 }
 
+#numberCart{
+  position: relative;
+  bottom: 20px;
+  color: white;
+  font-size: 15px; 
+}
+
 /* Product page starts here*/
 #product {
   background-image: url("../productsPage-section.jpg"); 

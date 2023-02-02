@@ -59,7 +59,7 @@
             <div class="header-content  right">
                 <img src="./header-icons/search.svg" alt="search icon">
                 <a href=""><img src="./header-icons/user.svg" alt="user icon"></a>
-                <a href="../22067813-DibbeshworAcharya/webpages/HTML/cartPage.html"><img src="./header-icons/shopping-cart.svg" alt="shopping cart icon"></a>
+                <a href="../22067813-DibbeshworAcharya/webpages/HTML/cartPage.html"><img src="./header-icons/shopping-cart.svg" alt="shopping cart icon"><inline id="numberCart">0</inline></a>
 
             </div>
         </header>
@@ -100,7 +100,7 @@
                                 </div>
                             </a>
                             <div>
-                                <button class="normal">Buy now</button>
+                                <button class="normal" onclick="addCart()">Buy now</button>
                             </div>
                         </div>
                     </div>
@@ -127,7 +127,7 @@
                                 </div>
                             </a>
                             <div>
-                                <button class="normal">Buy now</button>
+                                <button class="normal" onclick="addCart()">Buy now</button>
                             </div>
                         </div>
 
@@ -153,7 +153,7 @@
                                 </div>
                             </a>
                             <div>
-                                <button class="normal">
+                                <button class="normal" onclick="addCart()">
                                     Buy now</button>
                             </div>
                         </div>
@@ -180,7 +180,7 @@
                                 </div>
                             </a>
                             <div>
-                                <button class="normal">Buy now</button>
+                                <button class="normal" onclick="addCart()">Buy now</button>
                             </div>
                         </div>
 
@@ -208,7 +208,7 @@
                                 </div>
                             </a>
                             <div>
-                                <button class="normal">Buy now</button>
+                                <button class="normal" onclick="addCart()">Buy now</button>
                             </div>
                         </div>
 
@@ -232,7 +232,7 @@
                                 </div>
                             </a>
                             <div>
-                                <button class="normal">Buy now</button>
+                                <button class="normal" onclick="addCart()">Buy now</button>
                             </div>
                         </div>
 
@@ -261,7 +261,7 @@
                                 </div>
                             </a>
                             <div>
-                                <button class="normal">Buy now</button>
+                                <button class="normal" onclick="addCart()">Buy now</button>
                             </div>
                         </div>
 
@@ -285,7 +285,7 @@
                                 </div>
                             </a>
                             <div>
-                                <button class="normal">Buy now</button>
+                                <button class="normal" onclick="addCart()">Buy now</button>
                             </div>
                         </div>
 
@@ -312,7 +312,7 @@
                                 </div>
                             </a>
                             <div>
-                                <button class="normal">Buy now</button>
+                                <button class="normal" onclick="addCart()">Buy now</button>
                             </div>
                         </div>
 
@@ -340,7 +340,7 @@
                                 </div>
                             </a>
                             <div>
-                                <button class="normal">Buy now</button>
+                                <button class="normal" onclick="addCart()">Buy now</button>
                             </div>
                         </div>
 
@@ -366,7 +366,7 @@
                                 </div>
                             </a>
                             <div>
-                                <button class="normal">Buy now</button>
+                                <button class="normal" onclick="addCart()">Buy now</button>
                             </div>
                         </div>
 
@@ -391,7 +391,7 @@
                                 </div>
                             </a>
                             <div>
-                                <button class="normal">Buy now</button>
+                                <button class="normal" onclick="addCart()">Buy now</button>
                             </div>
                         </div>
 
@@ -401,6 +401,15 @@
             <!--grid ends here-->
         </section>
         <!--Section tag ends here-->
-        <script src="script.js"></script>
+        <script>
+            var cartNumber = document.getElementById("numberCart");
+            var num = 0
+
+
+            function addCart() {
+                num = num + 1;
+                cartNumber.innerHTML = num;
+            }
+        </script>
     </body>
 </html>
