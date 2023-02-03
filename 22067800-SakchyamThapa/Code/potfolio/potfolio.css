@@ -1,10 +1,22 @@
+@font-face {
+  font-family: montserrat;
+  src: url(./Montserrat-Light.ttf);
+}
+
 * {
+  font-family: montserrat, Arial, Helvetica, sans-serif;
   padding: 0;
   margin: 0;
 }
+
 body {
-  background-color: #e6f0ed;
-  position: relative;
+  background-color: #f6f6f6;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 .back {
   display: flex;
@@ -14,16 +26,16 @@ body {
   text-align: center;
   width: 100%;
   align-items: center;
-  background-color: #e0f2e9;
+  background-color: #f6f6f6;
 } /*below header to botoom*/
 ul {
   /*gap between list*/
   display: flex;
-  font-size: 1.3rem;
+  font-size: 20.8px;
   list-style: none;
   color: white;
 
-  gap: 5rem;
+  gap: 50px;
   align-items: center;
 } /*list*/
 .mainimg {
@@ -32,27 +44,33 @@ ul {
   object-fit: cover;
   background-position: top;
 } /*main image*/
+
+/*unordered ist*/
 ul img {
   height: auto;
   width: 150px;
 }
-/*green top*/
+/*green header*/
 .top {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 16px;
-  height: 3rem;
+  height: 48px;
   background-color: #00674b;
+
 }
 .whitetop {
-  height: 16px;
-  width: 100%;
-  padding: 20px 0px;
+  margin: auto;
+  font-size: small ;
+  height: 10px;
+  width: 95%;
+  padding: 10px 10px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+
 .arrangeleft {
   display: flex;
   gap: 20px;
@@ -63,8 +81,9 @@ ul img {
 }
 .arrangeleft div img {
   height: auto;
-  width: 30px;
+  width: 20px;
 }
+
 .arrangeright {
   display: flex;
   gap: 10px;
@@ -78,8 +97,9 @@ ul img {
   width: 80%;
   object-fit: fill;
   height: 320px;
-} /*end of green top*/
-/*Starting of menu button*/
+} /*green top end*/
+
+/*menu button*/
 .menu {
   top: 0;
   left: 0;
@@ -91,6 +111,7 @@ ul img {
   justify-content: center;
   align-items: center;
 }
+
 .button p {
   padding: 16px 32px;
   position: relative;
@@ -101,105 +122,166 @@ ul img {
 .button {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 16px;
 }
 .button p:hover {
   background-image: linear-gradient(#16a085, #27ae60);
 }
 
 .insideicon {
-  width: 30px;
+  width: 35px;
+  transition: 0.1s ease-in-out;
 }
+
+.insideicon:hover,
+.top ul li:hover {
+  transform: scale(1.1);
+}
+
+.top ul li:hover {
+  border-bottom: 1.2px solid white;
+}
+
+.active-page {
+  border-bottom: 1.5px solid white;
+}
+
+.top ul li {
+  transition: 0.2s ease-in-out;
+}
+
 .icons {
   display: flex;
   gap: 10px;
 }
 .menubutton {
   z-index: 100;
-} /*end of menu button*/
+}/*end of menu button*/
+
 /*potfolio intrudction*/
-.introduction {
+.body-container {
   display: flex;
-  justify-content: center;
-}
-.introimg {
-  height: 10px;
-  width: 10px;
   justify-content: space-around;
 }
-.link {
-  text-decoration: none;
-}
-.backpot {
-  display: flex;
-}
-/*Startting of left potfolio */
-.leftpot {
-  flex-basis: 15%;
-  background-color: #118b44;
-  height: 100vh;
-}
-.images-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  gap: 4rem;
-}
-.person {
-  height: 80px;
-  width: 80px;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  gap: 10px;
-  color: white;
-  border-radius: 50%;
-}
-.person img {
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  border: 3px solid white;
-}
-/*Starting of porfolio in right*/
-.rightpot {
-  background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.mainpot {
-  display: flex;
-  align-items: center;
-  width: 70%;
-  gap: 25px;
-}
-.imgpot {
-  width: 400px;
-  height: 400px;
-  border-radius: 50%;
-}
-.potleft {
-  display: flex;
-  flex-direction: column;
 
+.main-container{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 30px;
+}
+
+.member-container {
+  background-color: white ;
+  height: 200px;
+  width: 400px;
+  display: flex;
+  align-items: center;
   gap: 10px;
+  border-radius: 12px;
+  box-shadow: 3px 3px rgba(0,0,0,0.2) ;
 }
-.backpot {
-  margin-bottom: 50%;
-} /*end of porfolio*/
-.home {
-  text-decoration: none;
-  color: white;
+
+.member-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  position: relative;
+  right: 100px;
 }
-.link {
-  text-decoration: none;
-  color: black;
+
+.member-image img {
+  width: 200px;
+  border-radius: 50%;
+  box-shadow: 2px 2px rgba(0,0,0,0.2);
+  transition: 0.2s ease-in-out;
 }
-.wallet:hover {
+
+.member-image img:hover {
+  opacity: 0.7;
+}
+
+.member-image button {
+  border-radius: 50%;
+  border: none;
   cursor: pointer;
 }
+
+.member-description {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+  right: 40px;
+}
+
+.portfolio {
+  margin: auto;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+  width: 90%;
+  display: flex;
+}
+
+.portfolio img {
+  width: 400px;
+  box-shadow: 2px 2px rgba(0,0,0,0.2);
+  border-radius: 50%;
+}
+
+.portfolio-details {
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.portfolio-details h1 {
+  border-top: 1px solid black;
+}
+
+.portfolio-details ul {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.close {
+  width: 30px;
+  position: relative;
+  left: 20px;
+  top: 20px;
+}
+
+.portfolio-details li,
+.portfolio li {
+  padding: none;
+  margin: none;
+  list-style: none;
+  color: black;
+}
+
+
+#roshni,
+#yogal,
+#sakchyam,
+#dibbeshwor {
+  display: none; 
+}
+
+
+
+
+
+

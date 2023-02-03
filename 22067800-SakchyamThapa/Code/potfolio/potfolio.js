@@ -1,30 +1,33 @@
-const person = document.querySelector(".images-container");
-const img = document.querySelector(".imgpot");
-const name = document.querySelector(".name");
-const info = document.querySelector(".info");
+var body = document.getElementById('frontPage'); //getting the main body container 
 
-person.addEventListener("click", (e) => {
-  const el = e.target.closest(".person").dataset.img;
-  img.src = el;
-  name.textContent = e.target.closest(".person").dataset.name;
-  info.textContent = e.target.closest(".person").dataset.info;
-});
-const button = document.querySelector(".menubutton");
-const background = document.querySelector(".menu");
-let isShowing = true;
+//getting all the individual portfolio container
+var roshniDisplay =  document.getElementById('roshni');
+var yogalDisplay = document.getElementById('yogal');
+var sakchyamDisplay = document.getElementById('sakchyam');
+var dbeeeDisplay = document.getElementById('dibbeshwor');
 
-button.addEventListener("click", function () {
-  if (isShowing) {
-    background.style.position = "absolute";
-    background.style.display = "flex";
-    isShowing = false;
-  } else {
-    background.style.position = "relative";
-    background.style.display = "none";
-    isShowing = true;
-  }
-});
-const walletBtn = document.querySelector(".wallet");
-walletBtn.addEventListener("click", () => {
-  alert("Wallet points coming soon");
-});
+
+//hides the main body and displays the selected portfolio by chaning display values
+function roshni() {
+  
+  body.style.display = 'none';
+  roshniDisplay.style.display = 'block';
+}
+
+function yogal() {
+  
+  body.style.display = 'none';
+  yogalDisplay.style.display = 'block';
+}
+
+function sakchyam() {
+
+  body.style.display = 'none';
+  sakchyamDisplay.style.display = 'block';
+}
+
+function dibbeshwor() {
+  
+  body.style.display = 'none';
+  dbeeeDisplay.style.display = 'block';
+}
