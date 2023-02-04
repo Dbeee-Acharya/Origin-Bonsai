@@ -22,11 +22,13 @@ section {
         border-radius: 0px 3px 3px 0px;
     }
 
+    /* adding hover effects to the previous and next button  */
     .back:hover,
     .next:hover {
         background-color: rgba(0,0,0,0.2);
     }
 
+        /* post container wraps the entireity of feed post  */
     .post-container {
         display: none;
         margin-top: 50px;
@@ -39,6 +41,8 @@ section {
         overflow:visible;
     }
 
+        /* post content is the text part */
+
         .post-content {
             position: absolute;
             width: 500px;
@@ -50,6 +54,7 @@ section {
             z-index: 50;
         }
 
+            /* post interaction contains the buttons  */
             .post-interaction button {
                 width: 100px;
                 height: 40px;   
@@ -59,17 +64,20 @@ section {
                 box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.2);
             }
 
+            /* adding hover effects to button  */
             .post-interaction button:hover {
                 background-color: #00674b;
                 color: white;
                 text-emphasis: bold ;
             }
 
+            /* adding animation when button is pressed  */
             .post-interaction button:active {
                 box-shadow: 0px 0px;
                 transform: translate(4px, 4px);
             }
 
+            /* positioning the buttons  */
             .post-interaction {
                 position: absolute;
                 display: flex;
@@ -78,6 +86,7 @@ section {
                 left: 240px;
             }
 
+            /* setting the height and widith of the photo  */
             .post-photo {
                 position: absolute;
                 top: 0;
@@ -87,7 +96,7 @@ section {
                 transition: 0.3s ease-in-out;
             }
 
-
+            /* to add this class and make content visible  */
             .active{
                 display: block;
             }

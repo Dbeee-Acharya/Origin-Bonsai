@@ -75,13 +75,8 @@ header img {
     transform: scale(1.1); /*transforma is used to apply either 2d or 3d transformation. Scale as its name scales the element in each direction*/
 }
 
+/* adding white underline when hovering over links  */
 .middle-links:hover {
     border-bottom: 1.5px solid white;
 }
 
-#menu {
-    background: transparent;
-    border: none;
-    margin: 0;
-    padding: 0;
-}
