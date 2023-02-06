@@ -140,6 +140,7 @@ ul img {
 .icons {
   display: flex;
   gap: 10px;
+  
 }
 .menubutton {
   z-index: 100;
