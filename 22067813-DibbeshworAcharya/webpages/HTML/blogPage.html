@@ -21,22 +21,23 @@
     }
 </style>
 
-<body>
+<body id="blog">
     
     <header>
-        <div class="header-content left">
-            <img src="../../icons/header-icons/search.svg" alt="search icon">
-        </div>
-    
+        
         <!--This div wraps the middle part of the header-->
         <div class="header-content middle">
             <ul>
                 <!--The middle-links class is given so that transform can be applied to only the specified links and not the image-->
+                <li><a href="../../../22067800-SakchyamThapa/Code/index.html"><img src="../../logo/png/logo-white-removebg.png" alt="main logo" style="width: 150px; overflow: hidden;" id="logo-header"></a></li> <!--Inline css was used to override the external css for width-->
                 <li class="middle-links"><a href="../../../22067800-SakchyamThapa/Code/index.html"">Home</a></li>
                 <li class="middle-links"><a href="../../../22067759-RoshaniKarki/Product.html">Products</a></li>
-                <li><a href="../../../22067800-SakchyamThapa/Code/index.html"><img src="../../logo/png/logo-white-removebg.png" alt="main logo" style="width: 150px; overflow: hidden;" id="logo-header"></a></li> <!--Inline css was used to override the external css for width-->
                 <li class="middle-links"><a href="./feedPage.html"> Feed</a></li>
-                <li class="middle-links"><a href="../../../22067759-RoshaniKarki/blog.html">Blog</a></li>
+                
+                <li class="middle-links header-active" ><a href="../../../22067759-RoshaniKarki/blog.html">Blog</a></li>
+                <li class="middle-links"><a href="../../../22067800-SakchyamThapa/Code/potfolio.html">About Us</a></li>
+                <li class="middle-links"><a href="./referencePage.html">References</a></li>
+                <li class="middle-links"><a href="./feedbackPage.html">Feedback</a></li>
             </ul>
         </div>
     
@@ -45,7 +46,7 @@
         <div class="header-content  right">
             <a href=""><img src="../../icons/header-icons/user.svg" alt="user icon"></a>
             <a href="./cartPage.html"><img src="../../icons/header-icons/shopping-cart.svg" alt="shopping cart icon"></a>
-            <a href=""><img src="../../icons/header-icons/menu.svg" alt="menu icon"></a>
+            <img src="../../icons/header-icons/search.svg" alt="search icon">
         </div>
     </header>
 
@@ -55,16 +56,18 @@
 <!-- blog content divided by sections -->
     <section class="Blog-Introduction">
         <p>
-            Technology has become an integral part of human lives. Birth of the industrial revolution has caused among other things, an exponential grown in technology. 
+            <strong>Technology</strong> has become an integral part of human lives. Birth of the industrial revolution has caused among other things, an exponential grown in technology. 
             Many of the most valuable companies in this age are tech companies. Google, Amazon, Microsoft, Meta and many more in their core are tech companies. Our daily 
             lives have become so synonymous with technology that without it, many of our lives would be meaningless. 
         </p>
+
+        <!-- <img src="../../images/BlogFront.jpg" alt="" style="width: 500px; float: right; margin-left: 10px; border-radius: 8px;"> -->
 
         <p>
             But what exactly is technology and how much does it really affect our daily lives? Technology is the application of scientific knowledge in practical everyday human life, 
             to change and manipulate the human environment (Britannica, 2022). Technology is everywhere, the phones we are so addicted to, refrigerators we store our food in, TVs, 
             Heaters, Fans we are surrounded by technology. The term tech now mostly refers to phones, tv’s and the next big thing. But technology in simple terms is to apply knowledge 
-            for achieving practical goals in a reproducible way (Skolnikoff, 1993)
+            for achieving practical goals in a reproducible way (Skolnikoff, 1993).
         </p>
 
         <p>
@@ -77,7 +80,7 @@
 
     <section class="blog-positiveImpacts">
         <p>
-            Positive Impact: Undoubtedly the most positive impact of technology for us is the increase in quality of life. We can store foods for longer, 
+            <em><strong>Positive Impact:</strong></em> Undoubtedly the most positive impact of technology for us is the increase in quality of life. We can store foods for longer, 
             cook better, drink cleaner water, stay healthier, commute better and so much more because of advancements made in technology. If we don’t know anything 
             we can quickly look it up on the internet, we can learn new things, relearn things we might have forgotten even set reminders for things we might forget, 
             all because of technology. 
@@ -102,10 +105,20 @@
 
     <section class="blog-NegativeImpacts">
         <p>
-            Negative Impact:  Technological advancement today has come with a big responsibility. The advancement made in nuclear technology has been great for sustainable energy 
+            <em><strong>Negative Impact:</strong></em> Technological advancement today has come with a big responsibility. The advancement made in nuclear technology has been great for sustainable energy 
             but along with that there now is always a looming threat of nuclear winter. Social media has affected the growth of children and people’s mental health. 
             A <a href ="https://www.ajpmonline.org/article/S0749-3797(17)30016-8/fulltext" target="_blank">2017 study</a> showed that young adults with high social media use were three times 
-            more likely to feel socially isolated than people who didn’t use social media that often 
+            more likely to feel socially isolated than people who didn’t use social media that often. Not only that, a  there have been cases of people being physically injured because they were focused
+            on their phones while walking, driving etc. There also has been cases of <a href="https://www.health.harvard.edu/blog/tics-and-tiktok-can-social-media-trigger-illness-202201182670">Teens developing tick disease</a> 
+            because they saw a video on Tiktok. Parents are making their children dependent on phones from a very early age because it is easier for them. This not only affects the child's physical health but also 
+            affects their mental health in the long term. Many people cannot eat or even go to the bathroom if they do not have their phones with them. 
+        </p>
+
+        <p>
+            The dependency on tech, for even minute daily tasks has become an epidemic and is showing no signs of slowing down. Students use AI to do their homeworks, write essays who knows, even this blog might
+            be written using AI technology. The evolutionary instinct of human beings slowly removes things and functionality if it is found useless. For example we had tails a long time ago, but because we didnt use
+            it, evolution took it away. Is there a possibility that the same might happen to our mind? What separates humans from animals is that they do not act entirely on instinct. They have a consciousness, a moral 
+            compass. But what happens if we rely on technology to make the conscious decisions for us? 
         </p>
 
         <p>
@@ -116,19 +129,29 @@
 
     <section class="blog-ImpactOnBonsai">
         <p>
-            Impact of technology while selling bonsai plants: Our company, origin-bonsai is fully online. We do not have any physical stores and all our business is conducted from the internet. 
+            <em><strong>Impact of technology while selling bonsai plants:</strong></em> Our company, origin-bonsai is fully online. We do not have any physical stores and all our business is conducted from the internet. 
             Technology for us has been game changing. Without it, there would be no origin bonsai. We established this company in 2016 because of our love for bonsai plants. We sell a limited 
             species of bonsai because we aim for quality, not quantity. Because of this, we even have the option to hire an expert. They will come to your home and teach you everything needed 
             to take care of your new bonsai. We are glad that the technology today is advanced enough that we can conduct this business without having any physical stores. The Ad campaigns we
             run on social media increases our exposure to a wider audience, which in turn increases sales. Like any company, we are driven by profit as much as we are driven by our love for bonsai. 
             Technology has helped us maximize our profit and decrease overhead costs. 
         </p>
+
+        <p>
+            If it was not for technology, there would be no origin Bonsai. When we first came up with the idea of selling bonsai plants, we went out to look for physical stores around kathmandu. But the rent 
+            was so high that we had lost all hope. We were a bunch of broke students with a dream. None of us had the gut to take out a loan for initial investment. That is when one of our team members 
+            came up with the idea of opening an online store. The initial cost then would be much lower. We went on to design our website and started to work on our dream. All of that was possible because
+            of technology. It shows that what we get out of technology depends entirely on how we use it. We will forever be thankful to the people behind this age and all the facilities we have.
+        </p>
     </section>
 
     <section class="blog-conclusion">
         <p>
-            In conclusion, technology is a boon for human population if we use it responsibly. Many people have found their purpose, their livelihood because of technology. It has caused harm 
-            to a few, but in contrast it has helped billions of people in various ways we may not have even imagined. 
+           <strong> In conclusion,</strong> technology is a boon for human population if we use it responsibly. Many people have found their purpose, their livelihood because of technology. It has caused harm 
+            to a few, but in contrast it has helped billions of people in various ways we may not have even imagined. Technology when used properly can be amazing, sometimes outright magical. Imagine, being
+            able to see for the first time in your life because of technology. To be able to talk with the one you love even tho they are on a completely different continent. Things we once though were 
+            impossible now has become possible because of technology. It is in our hands to choose how to use the technology we have, do we use it for good? or do we use it for bad? Everything lies in our hands.
+            So, when used with good intent, technology is amazing. But when used with bad intent, technology can be dangerous. 
         </p>
     </section>
 

@@ -1,3 +1,4 @@
+/* setting the size of the main table which has all the products and other details  */
 table {
   width: 70%;
   border-collapse: collapse;
@@ -5,6 +6,7 @@ table {
   margin-top: 20px;
 }
 
+/* setting the color and position of table head  */
 th {
   text-align: left;
   padding: 8px;
@@ -13,9 +15,11 @@ th {
   font-weight: bold;
 }
 
+/* adding padding to table data  */
 td {
   padding: 10px 5px;
 }
+
 
 .cart-info {
   display: flex;
@@ -45,6 +49,7 @@ td {
   margin-top: auto;
 }
 
+/* this div wraps the checkout and hire buttons  */
 .checkout-container {
   margin: auto;
   margin-bottom: 20px;

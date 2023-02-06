@@ -1,10 +1,18 @@
+@font-face {
+  font-family: montserrat;
+  src: url(./Montserrat-Light.ttf);
+}
+
 * {
+  font-family: montserrat, Arial, Helvetica, sans-serif;
   padding: 0;
   margin: 0;
 }
+
 body {
   background-color: #e6f0ed;
   position: relative;
+  height: 1px;
 }
 .back {
   display: flex;
@@ -108,11 +116,31 @@ ul img {
 }
 
 .insideicon {
-  width: 30px;
+  width: 35px;
+  transition: 0.2s ease-in-out;
 }
+
+.insideicon:hover,
+.top ul li:hover {
+  transform: scale(1.15);
+}
+
+.top ul li {
+  transition: 0.2s ease-in-out;
+}
+
+.top ul li:hover {
+  border-bottom: 1.5px solid white;
+}
+
+.active-page {
+  border-bottom: 1.5px solid white;
+}
+
 .icons {
   display: flex;
   gap: 10px;
+  
 }
 .menubutton {
   z-index: 100;
@@ -137,7 +165,7 @@ ul img {
 .leftpot {
   flex-basis: 15%;
   background-color: #118b44;
-  height: 100vh;
+  height: 830px;
 }
 .images-container {
   display: flex;
@@ -164,31 +192,7 @@ ul img {
   border-radius: 50%;
   border: 3px solid white;
 }
-/*Starting of porfolio in right*/
-.rightpot {
-  background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.mainpot {
-  display: flex;
-  align-items: center;
-  width: 70%;
-  gap: 25px;
-}
-.imgpot {
-  width: 400px;
-  height: 400px;
-  border-radius: 50%;
-}
-.potleft {
-  display: flex;
-  flex-direction: column;
 
-  gap: 10px;
-}
 .backpot {
   margin-bottom: 50%;
 } /*end of porfolio*/
@@ -202,4 +206,171 @@ ul img {
 }
 .wallet:hover {
   cursor: pointer;
+}
+/*Starting of porfolio in right*/
+.rightpot {
+  background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+  width: 100%;
+  position: relative;
+  border-left: 50px;
+  border-right: 50px;
+}
+.mainpot {
+  width: 250px;
+  height: 100px;
+  position: relative;
+  margin-top: 200px;
+  display: flex;
+  margin-left: 32px;
+
+  padding-bottom: 0;
+}
+.imgpot {
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  object-fit: cover;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  border: 3px solid black;
+}
+.box {
+  background: var(--blue);
+  margin-left: -100px;
+  margin-top: -178px;
+}
+.name {
+  color: blue;
+  text-align: center;
+  margin-top: -34px;
+  font-size: 30px;
+  letter-spacing: 2px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.name span {
+  color: magenta;
+  text-align: center;
+  margin-top: -34px;
+  font-size: 30px;
+  letter-spacing: 2px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.below-name {
+  width: 180px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 7px;
+  border-bottom: 1px solid red;
+  border-top: 1px solid wheat;
+  color: var(--gray);
+  margin-top: 11px;
+  text-transform: uppercase;
+}
+.info {
+  margin-top: 50px;
+}
+.heading {
+  width: 180px;
+  margin: 0 auto;
+  padding: 2px;
+  border-bottom: 1px solid greenyellow;
+  border-top: 1px solid green;
+  color: indigo;
+  margin-top: 11px;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+.data {
+  color: teal;
+  width: 184px;
+  margin: 0 auto;
+  margin-top: 25px;
+  font-size: 15px;
+  line-height: 14px;
+}
+.data span {
+  font-size: 12px;
+}
+.data span {
+  font-size: 12px;
+}
+.span1 img {
+  background: white;
+  width: 30px;
+  padding: 6px;
+  border-radius: 16px;
+  position: relative;
+  margin-right: 10px;
+}
+.rport {
+  padding: 40px 30px;
+  background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+
+  width: 68%;
+
+  float: left;
+  height: 740px;
+}
+.rheading img {
+  background: #3d3f42;
+  width: 36px;
+  padding: 7px;
+  position: relative;
+  right: 10px;
+  bottom: -50px;
+  left: -16px;
+  border-radius: 17px;
+  display: inline-block;
+  margin-top: -6px;
+}
+.heading {
+  border-top: 2px solid brown;
+  border-bottom: 2px solid brown;
+  display: flex;
+  justify-content: center;
+}
+.Profile {
+  margin: 0%;
+  padding: 10px;
+  border-bottom: 2px solid blueviolet;
+  border-top: 2px solid blueviolet;
+  color: green;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: bolder;
+  margin-left: 50px;
+  line-height: 18px;
+}
+.data1 {
+  margin-top: 20px;
+  color: black;
+  text-align: justify;
+  word-spacing: -4px;
+}
+.left {
+  width: 25%;
+  float: left;
+}
+.right {
+  width: 75%;
+  position: relative;
+}
+.leftbox {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.data2 {
+  font-size: 14px;
+  font-weight: 600;
+}
+.data3 {
+  font-size: 12px;
+  color: black;
+}
+.backpot {
+  height: 820px;
 }

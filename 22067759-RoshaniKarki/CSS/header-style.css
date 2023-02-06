@@ -1,3 +1,12 @@
+@font-face {
+    font-family: montserrat;
+    src: url(./Montserrat-Light.ttf);
+}
+
+* {
+    font-family: montserrat, Arial, Helvetica, sans-serif;
+}
+
 header {
     padding: 8px 16px;  
     height: 65px;
@@ -11,6 +20,12 @@ header {
     top: 0; /*This make sure that the header stays on the top of the page*/
     z-index: 90; /*defines the position of the header along the x axis, makes sure that other elements go below the header and dont block it*/
 }
+
+.header-active {
+    border-bottom: 1.5px solid white;
+    height: 25px;
+}
+
 
 /*Targets all the images inside the header*/
 header img {
@@ -57,7 +72,11 @@ header img {
 .left img:hover,
 .right img:hover,
 .middle-links:hover {
-    transform: scale(1.15,1.15); /*transforma is used to apply either 2d or 3d transformation. Scale as its name scales the element in each direction*/
+    transform: scale(1.1); /*transforma is used to apply either 2d or 3d transformation. Scale as its name scales the element in each direction*/
+}
+
+.middle-links:hover {
+    border-bottom: 1.5px solid white;
 }
 
 #menu {

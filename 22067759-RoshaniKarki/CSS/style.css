@@ -9,6 +9,13 @@ body {
   padding: 0;
 }
 
+#numberCart{
+  position: relative;
+  bottom: 20px;
+  color: white;
+  font-size: 15px; 
+}
+
 /* Product page starts here*/
 #product {
   background-image: url("../productsPage-section.jpg"); 
@@ -30,7 +37,7 @@ body {
 }
 #product1 {
   text-align: center;
-  background-color:#b4deb8;
+  background-color: #f6f6f6;
 }
 /* h2 for product1 section*/
 #product1 h2 {
@@ -49,6 +56,11 @@ body {
   display: flex;
   margin-left: 20px;
 }
+
+.defult {
+  margin-right: 20px;
+}
+
 .select {
   border: 1px solid black;
   padding: 1px;
@@ -68,18 +80,23 @@ body {
   border-radius: 25px;
   cursor: pointer;
   box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
-  background-color: whitesmoke;
   margin: 15px 0;
   transition: 0.2s ease;
   position: relative;
 }
+
+.pro {
+  color: white;
+  background-color: white; 
+}
+
 /*buy now button for the products */
 #product1 .pro button {
   transition-duration: 0.4s;
   background-color: #5d9943;
   margin-left: 70px;
   padding: 4px 8px;
-  color: #ffffff;
+  color: white;
   font-size: 15px;
   border-radius: 4px;
 }
@@ -89,7 +106,7 @@ background-color: black;
 padding: 4px 8px;
 box-shadow: 0 10px 12px 0 rgba(0, 0, 0, 0.24),
   0 15px 40px 0 rgba(0, 0, 0, 0.19);
-color: #ffffff;
+color: white;
 font-size: 15px;
 border-radius: 4px;
 }
@@ -98,7 +115,7 @@ border-radius: 4px;
   width: 100%;
   height: 200px;
   border-radius: 20px;
-  color: #f5f5f5;
+  color: white;
 }
 /* description for the products*/
 #product1 .pro .des {
@@ -129,15 +146,21 @@ border-radius: 4px;
   height: 40px;
   line-height: 40px;
   border-radius: 50px;
-  background-color: #b3e4b7;
+  background-color: white;
   font-weight: 500;
   color: #5d9943;
 }
 
 .priceCounter {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-around;
 }
+
+.price {
+  display: flex;
+  gap: 5px;
+}
+
 .price h4 {
   color: rgb(241, 77, 77);
 }
@@ -255,7 +278,7 @@ input[type="number"]::-webkit-inner-spin-button {
   padding: 10px 10px;
   margin-left: 10px;
   margin-right: 10px;
-  color: #ffffff;
+  color: white;
   font-size:  15px;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 4px;
@@ -266,9 +289,21 @@ input[type="number"]::-webkit-inner-spin-button {
   padding: 6px 10px;
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
     0 17px 50px 0 rgba(0, 0, 0, 0.19);
-  color: #ffffff;
+  color: white;
   font-size: 20px;
   border-radius: 4px;
+}
+
+.cross {
+  position: relative;
+  left: 10px;
+  top: 10px;
+  width: 30px;
+  transition: 0.2s ease-in-out;
+}
+
+.cross:hover {
+  transform: scale(1.1);
 }
 
 /* blog starts here */
@@ -330,16 +365,17 @@ input[type="number"]::-webkit-inner-spin-button {
   display: flex;
   flex-direction: column;
 }
+
 .blog-text .blog-title {
   color: #00674b;
-  font-size: 50px;
-  font-weight: 500;
+  font-size: 40px;
 }
-.blog-text .blog-title :hover {
-  color: rgb(183, 12, 12);
+.blog-text .blog-title {
   transition: 0.3s ease-in-out;
 }
-.blog-text a {
+
+.blog-text a,
+.blog-text h2 {
   color: black;
 }
 .blog-text a:hover {
@@ -425,6 +461,10 @@ input[type="number"]::-webkit-inner-spin-button {
   border: 1px #cbd1cc;
   padding: 20px;
   border-radius: 10px;
+}
+
+#gallery table img {
+  width: 600px;
 }
 
 /**about bonsai**/
